@@ -10,8 +10,9 @@ int main(void)
 {
     char line[MAXLINE];
 
-    while (fgets(line, MAXLINE, stdin) != NULL)
+    while (fgets(line, MAXLINE, stdin) != NULL) {
         do_line(line);
+    }
 
     exit(0);
 }
@@ -39,10 +40,11 @@ void cmd_add(void)
     token = get_token();
 
     /* added by yh */
-    if (token > 0)
+    if (token > 0) {
         printf("valid command\n");
-    else
+    } else {
         printf("invalid command\n");
+    }
     /* rest of processing for this command */
 }
 
@@ -57,11 +59,13 @@ int get_token(void)
 
     token_flag++;
 
-    if (token_flag == 1)
+    if (token_flag == 1) {
         return TOK_ADD;
+    }
 
-    if (token_flag == 2)
+    if (token_flag == 2) {
         return (command_flag = 1 - command_flag);
+    }
 
     token_flag = 0;
 

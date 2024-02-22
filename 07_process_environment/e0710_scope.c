@@ -12,6 +12,7 @@ int f1(int val)
     int num = 0;
     int *ptr = &num;
 
+    /* use gcc compile option -O to ensure the error shows up */
     if (val == 0) {
         int val;
         val = 5;

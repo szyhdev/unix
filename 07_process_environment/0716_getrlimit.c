@@ -68,8 +68,9 @@ static void pr_limits(char *name, int resource)
     struct rlimit limit;
     unsigned long long lim;
 
-    if (getrlimit(resource, &limit) < 0)
+    if (getrlimit(resource, &limit) < 0) {
         err_sys("getrlimit error for %s", name);
+    }
 
     printf("%-17s  ", name);
 
