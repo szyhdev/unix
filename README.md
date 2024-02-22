@@ -11,9 +11,9 @@ Advanced Programming in the UNIX® Environment has helped generations of program
 Contents
 - Foreword to the Second Edition
 - Preface
-  Introduction
-  Changes from the Second Edition
-  Acknowledgments
+  * Introduction
+  * Changes from the Second Edition
+  * Acknowledgments
 - Preface to the Second Edition
   Introduction
   Changes from the First Edition
