@@ -25,9 +25,9 @@ Contents
   * Examples in the Text
   * Systems Used to Test the Examples
   * Acknowledgments
-- 1. UNIX System Overview
-  * 1.1. Introduction
-  * 1.2. UNIX Architecture
+- Chapter 1. UNIX System Overview
+  * 1. Introduction
+  * 2. UNIX Architecture
   * 1.3. Logging In
   * 1.4. Files and Directories
   * 1.5. Input and Output
@@ -39,7 +39,7 @@ Contents
   * 1.11. System Calls and Library Functions
   * 1.12. Summary
   * Exercises
-- 2. UNIX Standardization and Implementations
+- Chapter 2. UNIX Standardization and Implementations
   * 2.1. Introduction
   * 2.2. UNIX Standardization
   * 2.3. UNIX System Implementations
@@ -50,7 +50,7 @@ Contents
   * 2.8. Primitive System Data Types
   * 2.9. Differences Between Standards
   * 2.10. Summary
-- 3. File I/O
+- Chapter 3. File I/O
   * 3.1. Introduction
   * 3.2. File Descriptors
   * 3.3. open and openat Functions
@@ -68,7 +68,7 @@ Contents
   * 3.15. ioctl Function
   * 3.16. /dev/fd
   * 3.17. Summary
-- 4. Files and Directories
+- Chapter 4. Files and Directories
   * 4.1. Introduction
   * 4.2. stat, fstat, fstatat, and lstat Functions
   * 4.3. File Types
@@ -95,7 +95,7 @@ Contents
   * 4.24. Device Special Files
   * 4.25. Summary of File Access Permission Bits
   * 4.26. Summary
-- 5. Standard I/O Library
+- Chapter 5. Standard I/O Library
   * 5.1. Introduction
   * 5.2. Streams and FILE Objects
   * 5.3. Standard Input, Standard Output, and Standard Error
@@ -112,7 +112,7 @@ Contents
   * 5.14. Memory Streams
   * 5.15. Alternatives to Standard I/O
   * 5.16. Summary
-- 6. System Data Files and Information
+- Chapter 6. System Data Files and Information
   * 6.1. Introduction
   * 6.2. Password File
   * 6.3. Shadow Passwords
@@ -124,7 +124,7 @@ Contents
   * 6.9. System Identification
   * 6.10. Time and Date Routines
   * 6.11. Summary
-- 7. Process Environment
+- Chapter 7. Process Environment
   * 7.1. Introduction
   * 7.2. main Function
   * 7.3. Process Termination
@@ -137,7 +137,7 @@ Contents
   * 7.10. setjmp and longjmp Functions
   * 7.11. getrlimit and setrlimit Functions
   * 7.12. Summary
-- 8. Process Control
+- Chapter 8. Process Control
   * 8.1. Introduction
   * 8.2. Process Identifiers
   * 8.3. fork Function
@@ -156,7 +156,7 @@ Contents
   * 8.16. Process Scheduling
   * 8.17. Process Times
   * 8.18. Summary
-- 9. Process Relationships
+- Chapter 9. Process Relationships
   * 9.1. Introduction
   * 9.2. Terminal Logins
   * 9.3. Network Logins
@@ -169,7 +169,7 @@ Contents
   * 9.10. Orphaned Process Groups
   * 9.11. FreeBSD Implementation
   * 9.12. Summary
-- 10. Signals
+- Chapter 10. Signals
   * 10.1. Introduction
   * 10.2. Signal Concepts
   * 10.3. signal Function
@@ -193,7 +193,7 @@ Contents
   * 10.21. Job-Control Signals
   * 10.22. Signal Names and Numbers
   * 10.23. Summary
-- 11. Threads
+- Chapter 11. Threads
   * 11.1. Introduction
   * 11.2. Thread Concepts
   * 11.3. Thread Identification
@@ -201,7 +201,7 @@ Contents
   * 11.5. Thread Termination
   * 11.6. Thread Synchronization
   * 11.7. Summary
-- 12. Thread Control
+- Chapter 12. Thread Control
   * 12.1. Introduction
   * 12.2. Thread Limits
   * 12.3. Thread Attributes
@@ -213,7 +213,7 @@ Contents
   * 12.9. Threads and fork
   * 12.10. Threads and I/O
   * 12.11. Summary
-- 13. Daemon Processes
+- Chapter 13. Daemon Processes
   * 13.1. Introduction
   * 13.2. Daemon Characteristics
   * 13.3. Coding Rules
@@ -222,7 +222,7 @@ Contents
   * 13.6. Daemon Conventions
   * 13.7. Client–Server Model
   * 13.8. Summary
-- 14. Advanced I/O
+- Chapter 14. Advanced I/O
   * 14.1. Introduction
   * 14.2. Nonblocking I/O
   * 14.3. Record Locking
@@ -232,7 +232,7 @@ Contents
   * 14.7. readn and writen Functions
   * 14.8. Memory-Mapped I/O
   * 14.9. Summary
-- 15. Interprocess Communication
+- Chapter 15. Interprocess Communication
   * 15.1. Introduction
   * 15.2. Pipes
   * 15.3. popen and pclose Functions
@@ -245,7 +245,7 @@ Contents
   * 15.10. POSIX Semaphores
   * 15.11. Client–Server Properties
   * 15.12. Summary
-- 16. Network IPC: Sockets
+- Chapter 16. Network IPC: Sockets
   * 16.1. Introduction
   * 16.2. Socket Descriptors
   * 16.3. Addressing
@@ -255,7 +255,7 @@ Contents
   * 16.7. Out-of-Band Data
   * 16.8. Nonblocking and Asynchronous I/O
   * 16.9. Summary
-- 17. Advanced IPC
+- Chapter 17. Advanced IPC
   * 17.1. Introduction
   * 17.2. UNIX Domain Sockets
   * 17.3. Unique Connections
@@ -263,7 +263,7 @@ Contents
   * 17.5. An Open Server, Version 1
   * 17.6. An Open Server, Version 2
   * 17.7. Summary
-- 18. Terminal I/O
+- Chapter 18. Terminal I/O
   * 18.1. Introduction
   * 18.2. Overview
   * 18.3. Special Input Characters
@@ -278,7 +278,7 @@ Contents
   * 18.12. Terminal Window Size
   * 18.13. termcap, terminfo, and curses
   * 18.14. Summary
-- 19. Pseudo Terminals
+- Chapter 19. Pseudo Terminals
   * 19.1. Introduction
   * 19.2. Overview
   * 19.3. Opening Pseudo-Terminal Devices
@@ -287,7 +287,7 @@ Contents
   * 19.6. Using the pty Program
   * 19.7. Advanced Features
   * 19.8. Summary
-- 20. A Database Library
+- Chapter 20. A Database Library
   * 20.1. Introduction
   * 20.2. History
   * 20.3. The Library
@@ -298,7 +298,7 @@ Contents
   * 20.8. Source Code
   * 20.9. Performance
   * 20.10. Summary
-- 21. Communicating with a Network Printer
+- Chapter 21. Communicating with a Network Printer
   * 21.1. Introduction
   * 21.2. The Internet Printing Protocol
   * 21.3. The Hypertext Transfer Protocol
