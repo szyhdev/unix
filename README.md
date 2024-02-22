@@ -26,8 +26,8 @@ Contents
   * Systems Used to Test the Examples
   * Acknowledgments
 - Chapter 1. UNIX System Overview
-  * 1. Introduction
-  * 2. UNIX Architecture
+  * 1 Introduction
+  * 2 UNIX Architecture
   * 1.3. Logging In
   * 1.4. Files and Directories
   * 1.5. Input and Output
