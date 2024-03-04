@@ -7,8 +7,16 @@ void setbuf(FILE *fp, char *buf)
             err_sys("setvbuf error");
         }
     } else {
-        if (setvbuf(fp, buf, _IOFBF, BUFSIZ) != 0) {
-            err_sys("setvbuf error");
+        struct stat fp_stat;
+        fstat(fileno(fp), &fp_stat);
+        if (S_ISCHR(fp_stat.st_mode)) {
+            if (setvbuf(fp, buf, _IOLBF, BUFSIZ) != 0) {
+                err_sys("setvbuf error");
+            }
+        } else {
+            if (setvbuf(fp, buf, _IOFBF, BUFSIZ) != 0) {
+                err_sys("setvbuf error");
+            }
         }
     }
 }
