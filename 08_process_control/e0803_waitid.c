@@ -33,37 +33,37 @@ int main(void)
 
     if ((pid = fork()) < 0) {
         err_sys("fork error");
-    } else if (pid == 0) {       /* child */
+    } else if (pid == 0) {  /* child */
         exit(7);
     }
 
     if (waitid(P_PID, pid, &info, WEXITED | WSTOPPED | WCONTINUED) != 0) {  /* wait for child */
         err_sys("wait error");
     }
-    pr_siginfo(&info);           /* and print its status */
+    pr_siginfo(&info);      /* and print its status */
 
     if ((pid = fork()) < 0) {
         err_sys("fork error");
-    } else if (pid == 0) {       /* child */
-        abort();                 /* generates SIGABRT */
+    } else if (pid == 0) {  /* child */
+        abort();            /* generates SIGABRT */
     }
 
     if (waitid(P_PID, pid, &info, WEXITED | WSTOPPED | WCONTINUED) != 0) {  /* wait for child */
         err_sys("wait error");
     }
-    pr_siginfo(&info);           /* and print its status */
+    pr_siginfo(&info);      /* and print its status */
 
     if ((pid = fork()) < 0) {
         err_sys("fork error");
-    } else if (pid == 0) {       /* child */
+    } else if (pid == 0) {  /* child */
         int x = 0;
-        return rand() / x;       /* divide by 0 generates SIGFPE */
+        return rand() / x;  /* divide by 0 generates SIGFPE */
     }
 
     if (waitid(P_PID, pid, &info, WEXITED | WSTOPPED | WCONTINUED) != 0) {  /* wait for child */
         err_sys("wait error");
     }
-    pr_siginfo(&info);           /* and print its status */
+    pr_siginfo(&info);      /* and print its status */
 
     exit(0);
 }
