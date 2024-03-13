@@ -12,7 +12,7 @@ int main(void)
     if ((pid = vfork()) < 0) {
         err_sys("vfork error");
     } else if (pid == 0) {  /* child */
-        globvar++;             /* modify parent's variables */
+        globvar++;  /* modify parent's variables */
         var++;
         fclose(stdout);
         exit(0);            /* child terminates */

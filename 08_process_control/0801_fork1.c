@@ -17,7 +17,7 @@ int main(void)
     if ((pid = fork()) < 0) {
         err_sys("fork error");
     } else if (pid == 0) {  /* child */
-        globvar++;            /* modify variables */
+        globvar++;  /* modify variables */
         var++;
     } else {
         sleep(2);           /* parent */

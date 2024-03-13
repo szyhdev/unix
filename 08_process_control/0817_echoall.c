@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     extern char **environ;
 
     printf("--------begin--------\n");
-    for (i = 0; i < argc; i++) {  /* echo all command-line args */
+    for (i = 0; i < argc; i++) {             /* echo all command-line args */
         printf("argv[%d]: %s\n", i, argv[i]);
     }
     printf("\n");
